@@ -3,13 +3,13 @@
 # script for inserting portforwarding rules into the cloudstack DB
 
 networkid=305
-ipid=9
-instance_id=325
+ipid=33
+instance_id=306
 #vm ip address
-pfvmip=10.1.1.126
+pfvmip=10.1.1.230
 
 #set -x
-for i in {20..30}
+for i in {5..4000}
 do
 
 	a=$(uuidgen)
