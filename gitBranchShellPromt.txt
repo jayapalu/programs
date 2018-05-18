@@ -1,0 +1,6 @@
+
+#add the below line is bash profile
+source ~/dev/git-completion.bash
+source ~/dev/git-prompt.sh
+
+PS1='[\h\w$(__git_ps1 " (%s)")]\$ '
