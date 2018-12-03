@@ -1,9 +1,5 @@
 package linkedlist;
 
-import javax.swing.*;
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-import java.util.LinkedList;
-
 public class LinkedLIst {
 
     String listname;
