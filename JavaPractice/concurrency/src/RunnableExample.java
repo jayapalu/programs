@@ -58,5 +58,11 @@ public class RunnableExample {
 
         threadDemo1 d1 = new threadDemo1(new demo());
         d1.start();
+
+        myRunnable run = new myRunnable();
+        //run.run();
+
+        Thread t1 = new Thread(run);
+        t1.start();
     }
 }

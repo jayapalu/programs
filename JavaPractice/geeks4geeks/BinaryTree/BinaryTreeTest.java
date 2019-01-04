@@ -54,9 +54,9 @@ public class BinaryTreeTest {
         //btree.inorderSuccessor(temp,1, prev);
       // btree.morrisInorderTraversal(temp);
 
-        btree.inorder(temp);
+        btree.BFS();
 
         BinaryTree.Node temp1 = btree.root;
-        btree.inorderIterative(temp1);
+        btree.searializeBtree(temp1);
     }
 }

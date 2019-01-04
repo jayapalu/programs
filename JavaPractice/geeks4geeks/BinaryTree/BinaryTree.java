@@ -589,6 +589,21 @@ Node predecessorForMorris(Node node){
 void searializeBtree(Node cur){
     // do level order tree traversal and print -1 if the node does not have childs.
 
+    Queue<Node> q = new LinkedList<Node>();
+    q.add(cur);
+
+    while(!q.isEmpty()){
+
+        if(q.peek() != null) {
+            Node temp = q.peek();
+            System.out.print(" " + q.peek().data);
+            q.add(temp.left);
+            q.add(temp.right);
+        } else{
+            System.out.print(" -1 ");
+        }
+        q.remove();
+    }
 }
 
 } //class

@@ -40,5 +40,7 @@ public class BsTTest {
             System.out.println("LCA is "+node1.data);
         }
 
+        Node temp = tree.root;
+        tree.sumOfAllGreaterKeys(temp);
     }
 }
