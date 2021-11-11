@@ -12,8 +12,6 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.sun.org.apache.xalan.internal.xsltc.compiler.sym.PATTERN;
-
 public class RegexTagsContent {
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
