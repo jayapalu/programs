@@ -11,12 +11,11 @@ public class BinaryTree {
     Node root = null;
      class Node {
         int data;
-        Node left;
+        Node left = null;
         Node right;
 
         public Node(int ele){
             this.data = ele;
-            this.left = null;
             this.right = null;
         }
     }

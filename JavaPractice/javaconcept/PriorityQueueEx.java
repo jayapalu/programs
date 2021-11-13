@@ -8,6 +8,7 @@ class Priorities{
 
     List<Student> getStudents(List<String> events) {
         PriorityQueue<Student> pq = new PriorityQueue<Student>(events.size(), new StudentComparator());
+
         List<Student> ss = new LinkedList<Student>();
 
         for(String event: events){
