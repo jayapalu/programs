@@ -1,5 +1,4 @@
 package linkedlist;
-import linkedlist.LinkedLIst;
 
 public class SingleLinkedListTest {
 
@@ -11,15 +10,19 @@ public class SingleLinkedListTest {
         l1.insert(4);
         l1.insert(5);
         l1.insert(6);
-        l1.insert(7);
+        //l1.insert(7);
 
         l1.printlist();
+
+        l1.head = l1.swapNodesInpairs(l1.head);
+        l1.printlist();
+        /*
         l1.deleteNode(3);
         l1.insertAtFront(0);
         l1.printlist();
 
         l1.IsloopDetected();
-        /*
+
         //creating a loop in list
         l1.setLoopAtEle(2);
 
@@ -41,10 +44,10 @@ public class SingleLinkedListTest {
         l2.insert(7);
         l2.insert(10);
         l2.insert(15);
-        l2.printlist();
+       // l2.printlist();
 
-        LinkedLIst l3 = l1.interSectionOfTwoSortedList(l1.head, l2.head);
-        l3.printlist();
+        //LinkedLIst l3 = l1.interSectionOfTwoSortedList(l1.head, l2.head);
+        //l3.printlist();
 
 
     }

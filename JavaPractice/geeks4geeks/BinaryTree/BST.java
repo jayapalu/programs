@@ -1,7 +1,4 @@
 package BinaryTree;
-
-import linkedlist.LinkedLIst;
-
 class Node{
     int data;
     Node left;

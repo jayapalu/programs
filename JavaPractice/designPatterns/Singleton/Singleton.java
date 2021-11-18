@@ -1,4 +1,4 @@
-package designpattern;
+//package designpattern;
 
 import java.lang.System;
 
@@ -54,10 +54,11 @@ class SingletonClass {
 
     int i=10;
     static SingletonClass s = null;
+
+    //private constructor
     private SingletonClass () {
         System.out.println("SingletonClass constructor visited");
     }
-
 
     public static  SingletonClass getInstance() {
 

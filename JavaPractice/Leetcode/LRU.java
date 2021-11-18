@@ -26,7 +26,6 @@ public class LRU {
     int count;
 
     HashMap<Integer, DLnode> map = new HashMap<Integer, DLnode>();
-
     LRU(int capatciy){
         this.capacity = capatciy;
         int count = 1;
@@ -91,7 +90,6 @@ public class LRU {
     }
 
     public static void main(String[] args){
-
         LRU l1 = new LRU(4);
         l1.set(1,1);
         l1.set(2,2);
@@ -103,5 +101,4 @@ public class LRU {
         l1.get(5);
         l1.get(1);
     }
-
 }

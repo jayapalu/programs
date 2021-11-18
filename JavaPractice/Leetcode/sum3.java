@@ -51,9 +51,9 @@ public class sum3 {
                     System.out.println(res);
                     //break;
                     j++; k--;
-                }else {
+                //}else {
                     int temp = (sum > nums[i]) ? k-- : j++;
-                }
+                //}
             }
         }
 

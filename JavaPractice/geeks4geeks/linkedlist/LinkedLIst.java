@@ -275,4 +275,21 @@ public class LinkedLIst {
         l3.head = newHead;
         return l3;
     }
+
+    Node swapNodesInpairs(Node head) {
+
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        Node first = head;
+        Node second = head.next;
+
+        first.next = swapNodesInpairs(second.next);
+        second.next = first;
+
+        return second;
+    }
+
+
 }
