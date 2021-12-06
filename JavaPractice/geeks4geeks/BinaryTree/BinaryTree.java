@@ -566,9 +566,6 @@ void morrisInorderTraversal(Node node){
                 System.out.println(current.data);
                 current=current.right;
 
-                ArrayList<Integer> a = new ArrayList<Integer>();
-                a.size();
-
             }
         }
     }

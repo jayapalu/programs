@@ -291,5 +291,30 @@ public class LinkedLIst {
         return second;
     }
 
+    Node mergeSortedLists(Node n1, Node n2) {
+        // merging two linked lists using the recusion
+        // here we are just changing the node links
+
+        if (n1 == null){
+            return n2;
+        }
+        if (n2 == null){
+            return n1;
+        }
+
+        // first list element is smaller than second one. point the n1.next to next higher element
+
+        if(n1.data < n2.data) {
+            System.out.println("n1 data is less than n2");
+            n1.next = mergeSortedLists(n1.next, n2);
+            return n2;
+        } else {
+            System.out.println("n1 data is Greater than n2");
+            n2.next = mergeSortedLists(n1, n2.next);
+            return n1;
+        }
+
+
+    }
 
 }

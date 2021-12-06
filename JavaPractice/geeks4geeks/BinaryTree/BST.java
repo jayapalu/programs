@@ -239,6 +239,41 @@ Its Correct output is:
 
     }
 
+    /*
+
+left subtree:
+Node.left should be less than parent and less than its parent parent
+Node.right should be greater than parent and less than left subtree.
+
+ */
+    public boolean isValidBST(BinaryTree.Node node, int min, int max){
+
+        if(node.left == null && node. right == null){
+            return true;
+        }
+
+        System.out.println("node.data = "+node.data + " min="+min + " Max= "+max);
+
+        // node should be in min and max limits. it is not then return false.
+
+        if(node.data <= min || node.data >= max) {
+            return false;
+        }
+
+//        if(node.left != null && node.left.data > node.data && node.right != null && node.right.data < node.data) {
+//            return false;
+//        }else if (node.right == null && node.left.data > node.data) {
+//            return false;
+//        }else if (node.left == null && node.right.data < node.data) {
+//            return false;
+//        }
+
+        if (!isValidBST(node.left, min, root.data) ||  !isValidBST(node.right, node.data, max)) {
+            return false;
+        }
+        return true;
+    }
+
 
 
 

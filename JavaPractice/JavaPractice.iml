@@ -9,6 +9,8 @@
       <sourceFolder url="file://$MODULE_DIR$/leetcode" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Leetcode" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/designPatterns/Singleton" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Recursion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/linkedLIst" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="openjdk-17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />

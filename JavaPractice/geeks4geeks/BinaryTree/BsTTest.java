@@ -5,7 +5,7 @@ public class BsTTest {
     public static void main(String [] args){
         System.out.println("BST Test is called");
 
-        int a[] = new int[]{5,4,6,3,7,8};
+        int a[] = new int[]{40,35,70,37,80,36};
         BST tree = new BST();
 
         for(int i=0;i<a.length; i++) {
@@ -33,14 +33,15 @@ public class BsTTest {
             System.out.println("Is NOT BST");
         }
         */
+//
+//        Node node1 = tree.lca(root, 7,8);
+//        if(node1 != null){
+//            System.out.println("LCA is "+node1.data);
+//        }
 
-        Node node1 = tree.lca(root, 7,8);
-
-        if(node1 != null){
-            System.out.println("LCA is "+node1.data);
-        }
+//        Node temp = tree.root;
+//        tree.sumOfAllGreaterKeys(temp);
 
         Node temp = tree.root;
-        tree.sumOfAllGreaterKeys(temp);
     }
 }

@@ -1,6 +1,4 @@
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 
 class Node {
     int data;
@@ -173,9 +171,70 @@ public class Btree {
             return lca(root.left, v1, v2);
         }
         return lca(root.right, v1, v2);
+    }
 
+    static Map<Node, Node> parentMap = new HashMap<>();
+    // idea here is get the parent map for all the nodes.
+    // Once we have parent map then we can see the tree upper and bottom for the given node
+    //We can count the distance upside and down side for the node.
+    public static List<Integer> distanceK(Node root, Node target, int k) {
+        List<Integer> result = new ArrayList<>();
+        Set<Node> seen = new HashSet<>();
+        dfs(root, null);
+        Queue<Node> q = new LinkedList<>();
+        // use the quueue, once adding each level add NULL into queue to identify that level is completed
+        // This way we can have control on the level completion.
 
+        //for root node parent is null
+        q.add(target);
+        q.add(null);
 
+        seen.add(target);
+        seen.add(null);
+
+        int distance = 0;
+        while(!q.isEmpty()) {
+            Node node = q.poll();
+            if(node == null) {
+                if(k== distance) {
+
+                    while(!q.isEmpty()) {
+                        if(q.peek() != null)
+                            result.add(q.poll().data);
+                        return result;
+                    }
+                }
+                distance++;
+            } else {
+                if(!seen.contains(node)) {
+                    seen.add(node);
+                }
+
+                if(!seen.contains(node.left)) {
+                    q.offer(node.left);
+                }
+                if(!seen.contains(node.right)) {
+                    q.offer(node.right);
+                }
+                if(!seen.contains(parentMap.get(node))) {
+                    seen.add(parentMap.get(node));
+                    q.offer(parentMap.get(node));
+                }
+                q.offer(null);
+                int[] a = new int[10];
+            }
+        } //while
+
+        return new ArrayList<>();
+    }
+
+    public static void dfs(Node node, Node parent) {
+
+        if(node != null){
+            parentMap.put(node, parent);
+            dfs(node.left, node);
+            dfs(node.right, node);
+        }
     }
 
     public static void main (String [] args) {
