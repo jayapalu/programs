@@ -143,6 +143,8 @@ public class BST {
         if (cur == null) {
             return true;
         }
+        // max and min are INT_MAX and INT_MIN
+        // if( cur.data < min || cur.dat > max) { return false }
 
         boolean left = cur.left == null ? true : cur.left.data < cur.data && cur.left.data > min;
         boolean right = cur.right == null ? true : cur.right.data > cur.data && cur.right.data < max;
@@ -155,6 +157,17 @@ public class BST {
             return true;
         }
         return false;
+    }
+
+    void preorderWithMinMax(Node cur, int min, int max) {
+
+        if (cur == null) {
+            return;
+        }
+
+        System.out.print(" node " + cur.data + "min "+ min + " max: "+max);
+        preorderWithMinMax(cur.left, min, cur.data);
+        preorderWithMinMax(cur.right, cur.data, max);
     }
 
     /*
