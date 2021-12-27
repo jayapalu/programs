@@ -5,11 +5,11 @@
  */
 
 // @lc code=start
-class Solution {
-    public int[][] merge(int[][] intervals) {
+class Solution1 {
+    public int merge(int[][] intervals) {
         
-        Arrays.sort(merge, (a1[], a2[])-> a1 - a2))
 
+        return 0;
     }
 }
 // @lc code=end

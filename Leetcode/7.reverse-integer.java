@@ -5,9 +5,10 @@
  */
 
 // @lc code=start
-class Solution {
+class Solution2 {
     public int reverse(int x) {
-        
+
+        return 0;
     }
 }
 // @lc code=end

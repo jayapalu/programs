@@ -10,7 +10,6 @@ class Priorities{
         PriorityQueue<Student> pq = new PriorityQueue<Student>(events.size(), new StudentComparator());
 
         List<Student> ss = new LinkedList<Student>();
-
         for(String event: events){
             String[] input = event.split(" ");
 
