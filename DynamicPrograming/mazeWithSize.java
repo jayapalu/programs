@@ -17,9 +17,11 @@ public class mazeWithSize {
        // System.out.println(list);
     }
 
+    //row and col and last indexes here.
     static int mazeWaysCount(int row, int col){
         // row and col are starting with size
         if(row == 1 || col == 1){
+            //reached the first box
             return 1;
         }
         int right = mazeWaysCount(row, col-1);

@@ -5,9 +5,12 @@ public class MaizeWithObstacles {
         //https://youtu.be/zg5v2rlV1tM?list=PL9gnSGHSqcnp39cTyB1dTZ2pJ04Xmdrod&t=2304
         int a[] = new int[3];
         int a1[] = new int[]{1,2,3};
-        boolean maze[][] = new boolean[][]{{true, false},
-                {true, true}
-                         };
+        boolean maze[][] = new boolean[][]
+                {
+                        {true, false},
+                        {true, true}
+                };
+
         System.out.println("rowsize "+ maze.length +" col size= "+ maze[0].length);
         mazeWithObstacles("", maze, 0, 0);
 
