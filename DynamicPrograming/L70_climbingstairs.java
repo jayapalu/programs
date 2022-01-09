@@ -1,4 +1,4 @@
-public class ClimbingStairs_L70 {
+public class L70_climbingstairs {
     public static void main(String[] args){
         int top=4;
         int maxSteps = 2;

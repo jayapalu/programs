@@ -7,7 +7,7 @@ public class L05_longestPalindromeSubstr_LPS {
         res = longestPalindrome_bruteForce(s);
         System.out.println("longestPalindrome_bruteForce palindrome substr = "+res);
 
-      //  res = LPS(s);
+        //res = LPS(s);
         //System.out.println("LPS palindrome substr = "+res);
 
        res = LPS_optimized(s);
