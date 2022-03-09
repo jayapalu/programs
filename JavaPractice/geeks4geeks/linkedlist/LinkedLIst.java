@@ -94,6 +94,10 @@ public class LinkedLIst {
         }
 
         Node slow = head.next;
+
+        if(head.next == null) {
+            return null;
+        }
         Node fast = head.next.next;
 
         while (fast != null && fast.next != null) {
