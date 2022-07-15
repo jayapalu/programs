@@ -44,6 +44,9 @@ public class LRU {
         if(map.containsKey(key)){
             node = map.get(key);
             System.out.println("Get key="+node.key + " val="+node.value);
+
+            // move the key to the front of the list.
+
             return node.value;
         }
         System.out.println("Get NOT found ");
@@ -93,12 +96,14 @@ public class LRU {
         LRU l1 = new LRU(4);
         l1.set(1,1);
         l1.set(2,2);
-        l1.get(2);
-        l1.set(3,3);
-        l1.set(4,4);
-        l1.get(4);
-        l1.set(5,5);
-        l1.get(5);
         l1.get(1);
+        l1.set(3,3);
+        l1.get(2);
+        l1.set(4,4);
+        l1.get(1);
+        l1.get(3);
+        l1.get(4);
+
+        //Ans: [ 1 -1  -1, 3, 4]
     }
 }

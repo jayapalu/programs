@@ -12,7 +12,7 @@ public class NQueens_ways {
             Arrays.fill(row, false);
         }
         int count =  nqueens(board, 0);
-        //System.out.println("Num of way to place queen = "+ count);
+        System.out.println("Num of way to place queen = "+ count);
 
     }
 

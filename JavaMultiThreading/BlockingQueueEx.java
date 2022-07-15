@@ -1,10 +1,12 @@
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.PriorityBlockingQueue;
 
 public class BlockingQueueEx {
 
     public static void main(String[] args) {
         BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<String>(1);
+        PriorityBlockingQueue<Integer> pq = new PriorityBlockingQueue<>();
         producerThread p1 = new producerThread(blockingQueue);
         p1.start();;
 

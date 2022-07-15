@@ -2,7 +2,7 @@
 
 import java.lang.System;
 
-public class Singleton {
+public class    Singleton {
 
 
     public static void main(String args[]) {

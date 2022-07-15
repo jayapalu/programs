@@ -7,6 +7,8 @@ public class L139_WorkdBreak_BFS {
     public static void main(String[] args){
 
         String str = "catsandog";
+        str.split("\\s+");
+
         String[] dict = {"cats","dog","sand","and","cat"};
 
         HashSet<String> dictset = new HashSet<>();
