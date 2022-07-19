@@ -5,12 +5,12 @@ public class L718_maxLenRepeatedSubarray {
         int[] a = {1,2,3,2,1};
         int[] b = {3,2,1,4,7};
 
-        int count = maxLenthSubarryRepeatedInAnotherArray(a,b);
+        int count = maxLengthSubarrayRepeatedInAnotherArray(a,b);
         System.out.println(" count = "+count);
 
     }
 
-    static int maxLenthSubarryRepeatedInAnotherArray(int[] a, int[] b) {
+    static int maxLengthSubarrayRepeatedInAnotherArray(int[] a, int[] b) {
 
         int mem[][] = new int[a.length+1][b.length+1];
         int length  = 0;

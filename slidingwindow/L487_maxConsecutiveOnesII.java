@@ -1,4 +1,4 @@
-public class L487_maxConsecutiveOndesII {
+public class L487_maxConsecutiveOnesII {
 
     public static void main(String[] args) {
 
