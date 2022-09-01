@@ -78,7 +78,7 @@ public class NQueen_listOutput {
                     // System.out.print(" Q ");
                 }else{
                     //System.out.print(" X ");
-                    list.add(".");
+                    list.add("");
                 }
             }
             result.addAll(list);
@@ -101,7 +101,7 @@ public class NQueen_listOutput {
                     // System.out.print(" Q ");
                 }else{
                     //System.out.print(" X ");
-                    sb=sb.append(".");
+                    sb=sb.append("");
                 }
             }
             result.add(sb.toString());

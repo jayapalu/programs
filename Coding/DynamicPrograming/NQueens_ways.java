@@ -76,7 +76,7 @@ public class NQueens_ways {
                    // System.out.print(" Q ");
                 }else{
                     //System.out.print(" X ");
-                    list.add(".");
+                    list.add("");
                 }
             }
             result.addAll(list);
