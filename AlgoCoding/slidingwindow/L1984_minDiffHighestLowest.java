@@ -4,8 +4,8 @@ public class L1984_minDiffHighestLowest {
 
     public static void main(String[] args) {
 
-        int[] a = {90};
-        int min = mindDiffHighToLowest(a, 1);
+        int[] a = {9,4,1,7};
+        int min = mindDiffHighToLowest(a, 3);
         System.out.println(min);
     }
 
@@ -16,9 +16,11 @@ public class L1984_minDiffHighestLowest {
 
         for(int i=0; (i+k-1) < a.length; i++) {
 
+            System.out.println("i = "+ i + " i+k-1 = "+ (i+k-1) + " a[i+k-1] = " + a[i+k-1] + " a[i] = "+ a[i]);
+
             int diff  = a[i+k-1] - a[i];
             min = Math.min(diff, min);
-            //System.out.println(" diff = "+diff + " min= "+ min);
+            System.out.println(" diff = "+diff + " min= "+ min);
         }
         return min;
     }

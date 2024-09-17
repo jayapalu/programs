@@ -6,8 +6,7 @@ public class Sqrt_69 {
         System.out.println("result = "+result);
     }
 
-    public static int sqrt(int num){
-
+    public static int sqrt(int n
         if(num <= 1) {
             return num;
         }

@@ -19,16 +19,18 @@ public class L424_longestRepeatingCharReplace {
                 Character ch = str.charAt(right);
                 map.put(ch, map.getOrDefault(ch,0)+1);
                 int len = map.get(ch);
+
                 charMaxLen = Math.max(len, charMaxLen);
-                System.out.println(" Char = "+ch + "   right = "+right + " charMaxlen ="+charMaxLen);
+                System.out.println(" Char = "+ch + "   right = "+right + " charMaxlen ="+charMaxLen + " len = "+ len);
 
                 //substring - charMaxLen
                 while( (right-left)+1 - charMaxLen > k) {
 
-                    System.out.println("    k");
+                    System.out.println("  ######inside while    k");
                     map.put(str.charAt(left), map.get(str.charAt(left))-1);
                     left++;
                 }
+
                 maxLen = Math.max(maxLen, right-left+1);
                 System.out.println(" maxLen = "+maxLen +" left = "+left);
             }

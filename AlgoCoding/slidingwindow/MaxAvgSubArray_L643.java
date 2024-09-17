@@ -29,6 +29,7 @@ public class MaxAvgSubArray_L643 {
                 System.out.println("currentRunningAvg  " + currentRunningAvg + " maxAvg " + maxAvg);
                 //delete the leftmost element from the widnow
                 // here i - (k-1) not i - k - 1
+                System.out.println(" i - (k - 1) = " + (i - (k - 1)));
                 currentRunningSum = currentRunningSum - nums[i - (k - 1)];
             }
 

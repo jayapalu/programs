@@ -79,6 +79,7 @@ public class L219_containsDuplicates {
         //treeset searches in O(logN)
         Set<Integer> set = new TreeSet<>();
 
+
         for(i = 0; i<nums.length; i++) {
 
             if(set.contains(nums[i])) {

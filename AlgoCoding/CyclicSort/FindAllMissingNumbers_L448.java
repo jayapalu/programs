@@ -5,7 +5,7 @@ import java.util.List;
 
 public class FindAllMissingNumbers_L448 {
     public static void main(String[] args){
-        int[] nums = new int[]{1,3,4,2,2};
+        int[] nums = new int[]{5,3,4,2,2};
         List<Integer> list = findMissingNums(nums);
 
         System.out.println(list);
@@ -30,7 +30,8 @@ public class FindAllMissingNumbers_L448 {
         //index should be incremented only if the element is in correct position
         while(index<size){
             //check
-            if (nums[index] != nums[nums[index]-1]) {
+            int correct = nums[index] - 1;
+            if (nums[index] != nums[correct]) {
                 System.out.println("Number NOT in correct place, num= " + nums[index] + " index=" + index);
                 //swap
                 swap(nums, index, nums[index]-1);

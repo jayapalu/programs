@@ -1,0 +1,134 @@
+
+
+
+
+
+Tenant
+domain name
+comment
+instance id
+Additional details from DB. Query to update domains
+
+77976
+google.com
+27277
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"bancorendimento-gmail-27277@mail.prod.i-shn.net\",\"domainNames\":[\"grupobrsa.com.br\",\"google.com\"],\"masterKeyAliasName\":\"alias/usprod_dlp_77976_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":\"smtp-relay.gmail.com\",\"relayServerPort\":25,\"passiveDlpEnabled\":false,\"inlineDlpEnabled\":true,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null,\"validDomainNames\":null,\"inValidDomainNames\":null,\"allowToEnterDomainNames\":null,\"ignoreRemovedDomains\":null,\"warningMessage\":null}"}
+
+
+UPDATE `shn`.`DlpServiceConfiguration` SET `AdditionalDetails` = '{\"dlpEmailSettings\":\"{\\\"enabled\\\":null,\\\"emailAccount\\\":\\\"bancorendimento-gmail-27277@mail.prod.i-shn.net\\\",\\\"domainNames\\\":[\\\"grupobrsa.com.br\\\"],\\\"masterKeyAliasName\\\":\\\"alias/usprod_dlp_77976_2467\\\",\\\"quarantineEnabled\\\":null,\\\"quarantineMailbox\\\":null,\\\"relayServerHost\\\":\\\"smtp-relay.gmail.com\\\",\\\"relayServerPort\\\":25,\\\"passiveDlpEnabled\\\":false,\\\"inlineDlpEnabled\\\":true,\\\"odsEnabled\\\":false,\\\"responseActionsEnabled\\\":false,\\\"inlineEmailServerDomain\\\":null,\\\"validDomainNames\\\":null,\\\"inValidDomainNames\\\":null,\\\"allowToEnterDomainNames\\\":null,\\\"ignoreRemovedDomains\\\":null,\\\"warningMessage\\\":null}\"}' WHERE (`CSP_id` = '2467') and (`Tenant_Id` = '77976') and (`Instance_Id` = '27277');
+
+81409
+google.com
+15688
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"neonpagamentossa-gmail-15688@mail.prod.i-shn.net\",\"domainNames\":[\"neon.com.br\",\"meifacil.com\",\"consigamais.com.br\",\"biorc.com.br\",\"biorcfinanceira.com.br\",\"biorcpromotora.com.br\",\"somosleve.com.br\",\"google.com\",\"google.com.br\"],\"masterKeyAliasName\":\"alias/usprod_dlp_81409_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":\"smtp-relay.gmail.com\",\"relayServerPort\":25,\"passiveDlpEnabled\":false,\"inlineDlpEnabled\":true,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null,\"validDomainNames\":null,\"inValidDomainNames\":null,\"allowToEnterDomainNames\":null,\"ignoreRemovedDomains\":null,\"warningMessage\":null}"}
+
+
+UPDATE `shn`.`DlpServiceConfiguration` SET `AdditionalDetails` = '{\"dlpEmailSettings\":\"{\\\"enabled\\\":null,\\\"emailAccount\\\":\\\"bancorendimento-gmail-27277@mail.prod.i-shn.net\\\",\\\"domainNames\\\":[\\\"neon.com.br\\\",\\\"meifacil.com\\\",\\\"consigamais.com.br\\\",\\\"biorc.com.br\\\",\\\"biorcfinanceira.com.br\\\",\\\"biorcpromotora.com.br\\\",\\\"somosleve.com.br\\\"],\\\"masterKeyAliasName\\\":\\\"alias/usprod_dlp_81409_2467\\\",\\\"quarantineEnabled\\\":null,\\\"quarantineMailbox\\\":null,\\\"relayServerHost\\\":\\\"smtp-relay.gmail.com\\\",\\\"relayServerPort\\\":25,\\\"passiveDlpEnabled\\\":false,\\\"inlineDlpEnabled\\\":true,\\\"odsEnabled\\\":false,\\\"responseActionsEnabled\\\":false,\\\"inlineEmailServerDomain\\\":null,\\\"validDomainNames\\\":null,\\\"inValidDomainNames\\\":null,\\\"allowToEnterDomainNames\\\":null,\\\"ignoreRemovedDomains\\\":null,\\\"warningMessage\\\":null}\"}' WHERE (`CSP_id` = '2467') and (`Tenant_Id` = '81409') and (`Instance_Id` = '15688');
+
+
+106411
+google.com
+only google domain
+30453
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"sotran_log_e_transporte_ltda.-gmail-30453@mail.api-pop.i-shn.net\",\"domainNames\":[\"google.com\"],\"masterKeyAliasName\":\"alias/usprod_dlp_106411_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":\"smtp-relay.gmail.com\",\"relayServerPort\":25,\"passiveDlpEnabled\":true,\"inlineDlpEnabled\":false,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null,\"validDomainNames\":null,\"inValidDomainNames\":null,\"allowToEnterDomainNames\":null,\"ignoreRemovedDomains\":null,\"warningMessage\":null}"}
+
+
+UPDATE `shn`.`DlpServiceConfiguration` SET `AdditionalDetails` = '{\"dlpEmailSettings\":\"{\\\"enabled\\\":null,\\\"emailAccount\\\":\\\"sotran_log_e_transporte_ltda.-gmail-30453@mail.api-pop.i-shn.net\\\",\\\"domainNames\\\":null,\\\"masterKeyAliasName\\\":\\\"alias/usprod_dlp_106411_2467\\\",\\\"quarantineEnabled\\\":null,\\\"quarantineMailbox\\\":null,\\\"relayServerHost\\\":\\\"smtp-relay.gmail.com\\\",\\\"relayServerPort\\\":25,\\\"passiveDlpEnabled\\\":true,\\\"inlineDlpEnabled\\\":false,\\\"odsEnabled\\\":false,\\\"responseActionsEnabled\\\":false,\\\"inlineEmailServerDomain\\\":null,\\\"validDomainNames\\\":null,\\\"inValidDomainNames\\\":null,\\\"allowToEnterDomainNames\\\":null,\\\"ignoreRemovedDomains\\\":null,\\\"warningMessage\\\":null}\"}' WHERE (`CSP_id` = '2467') and (`Tenant_Id` = '106411') and (`Instance_Id` = '30453');
+
+
+165730
+google.com
+36747
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"ascendcorp_poc-gmail-36747@mail.prod.i-shn.net\",\"domainNames\":[\"ascendcorp.com\",\"google.com\"],\"masterKeyAliasName\":\"alias/usprod_dlp_165730_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":\"smtp-relay.gmail.com\",\"relayServerPort\":25,\"passiveDlpEnabled\":false,\"inlineDlpEnabled\":true,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null,\"validDomainNames\":null,\"inValidDomainNames\":null,\"allowToEnterDomainNames\":null,\"ignoreRemovedDomains\":null,\"warningMessage\":null}"}
+
+
+UPDATE `shn`.`DlpServiceConfiguration` SET `AdditionalDetails` = '{\"dlpEmailSettings\":\"{\\\"enabled\\\":null,\\\"emailAccount\\\":\\\"ascendcorp_poc-gmail-36747@mail.prod.i-shn.net\\\",\\\"domainNames\\\":[\\\"ascendcorp.com\\\"],\\\"masterKeyAliasName\\\":\\\"alias/usprod_dlp_165730_2467\\\",\\\"quarantineEnabled\\\":null,\\\"quarantineMailbox\\\":null,\\\"relayServerHost\\\":\\\"smtp-relay.gmail.com\\\",\\\"relayServerPort\\\":25,\\\"passiveDlpEnabled\\\":false,\\\"inlineDlpEnabled\\\":true,\\\"odsEnabled\\\":false,\\\"responseActionsEnabled\\\":false,\\\"inlineEmailServerDomain\\\":null,\\\"validDomainNames\\\":null,\\\"inValidDomainNames\\\":null,\\\"allowToEnterDomainNames\\\":null,\\\"ignoreRemovedDomains\\\":null,\\\"warningMessage\\\":null}\"}' WHERE (`CSP_id` = '2467') and (`Tenant_Id` = '165730') and (`Instance_Id` = '36747');
+
+
+217645
+google.com
+41807
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"vgi_public_company_limited-gmail-41807@mail.prod.i-shn.net\",\"domainNames\":[\"vgi.co.th\",\"google.com\"],\"masterKeyAliasName\":\"alias/usprod_dlp_217645_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":\"smtp-relay.gmail.com\",\"relayServerPort\":25,\"passiveDlpEnabled\":false,\"inlineDlpEnabled\":true,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null,\"validDomainNames\":null,\"inValidDomainNames\":null,\"allowToEnterDomainNames\":null,\"ignoreRemovedDomains\":null,\"warningMessage\":null}"}
+
+
+UPDATE `shn`.`DlpServiceConfiguration` SET `AdditionalDetails` = '{\"dlpEmailSettings\":\"{\\\"enabled\\\":null,\\\"emailAccount\\\":\\\"vgi_public_company_limited-gmail-41807@mail.prod.i-shn.net\\\",\\\"domainNames\\\":[\\\"vgi.co.th\\\"],\\\"masterKeyAliasName\\\":\\\"alias/usprod_dlp_217645_2467\\\",\\\"quarantineEnabled\\\":null,\\\"quarantineMailbox\\\":null,\\\"relayServerHost\\\":\\\"smtp-relay.gmail.com\\\",\\\"relayServerPort\\\":25,\\\"passiveDlpEnabled\\\":false,\\\"inlineDlpEnabled\\\":true,\\\"odsEnabled\\\":false,\\\"responseActionsEnabled\\\":false,\\\"inlineEmailServerDomain\\\":null,\\\"validDomainNames\\\":null,\\\"inValidDomainNames\\\":null,\\\"allowToEnterDomainNames\\\":null,\\\"ignoreRemovedDomains\\\":null,\\\"warningMessage\\\":null}\"}' WHERE (`CSP_id` = '2467') and (`Tenant_Id` = '217645') and (`Instance_Id` = '41807');
+
+75734
+gmail.com
+34836
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"latam-gmail-34836@mail-east-api-pop.i-shn.net\",\"domainNames\":[\"beta.lan.com\",\"dev.lan.com\",\"wdev.lan.com\"],\"masterKeyAliasName\":\"alias/usprod_dlp_75734_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":\"smtp-relay.gmail.com\",\"relayServerPort\":25,\"passiveDlpEnabled\":false,\"inlineDlpEnabled\":true,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null,\"validDomainNames\":null,\"inValidDomainNames\":null,\"allowToEnterDomainNames\":null,\"ignoreRemovedDomains\":null,\"warningMessage\":null}"}
+
+
+
+
+
+76724
+gmail.com
+only gmail
+13192
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"vigneshlab-gmail-13192@mail.prod.i-shn.net\",\"domainNames\":[\"gmail.com\"],\"masterKeyAliasName\":\"alias/usprod_dlp_76724_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":null,\"relayServerPort\":null,\"passiveDlpEnabled\":true,\"inlineDlpEnabled\":false,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null}"}
+
+UPDATE `shn`.`DlpServiceConfiguration` SET `AdditionalDetails` = '{\"dlpEmailSettings\":\"{\\\"enabled\\\":null,\\\"emailAccount\\\":\\\"vigneshlab-gmail-13192@mail.prod.i-shn.net\\\",\\\"domainNames\\\":null,\\\"masterKeyAliasName\\\":\\\"alias/usprod_dlp_76724_2467\\\",\\\"quarantineEnabled\\\":null,\\\"quarantineMailbox\\\":null,\\\"relayServerHost\\\":null,\\\"relayServerPort\\\":null,\\\"passiveDlpEnabled\\\":true,\\\"inlineDlpEnabled\\\":false,\\\"odsEnabled\\\":false,\\\"responseActionsEnabled\\\":false,\\\"inlineEmailServerDomain\\\":null}\"}' WHERE (`CSP_id` = '2467') and (`Tenant_Id` = '76724') and (`Instance_Id` = '13192');
+
+
+
+77342
+gmail.com
+only gmail
+10029
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"japantraining-gmail-10029@mail.prod.i-shn.net\",\"domainNames\":[\"gmail.com\"],\"masterKeyAliasName\":\"alias/usprod_dlp_77342_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":null,\"relayServerPort\":null,\"passiveDlpEnabled\":true,\"inlineDlpEnabled\":false,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null,\"validDomainNames\":null,\"inValidDomainNames\":null,\"allowToEnterDomainNames\":null,\"ignoreRemovedDomains\":null,\"warningMessage\":null}"}
+
+UPDATE `shn`.`DlpServiceConfiguration` SET `AdditionalDetails` = '{\"dlpEmailSettings\":\"{\\\"enabled\\\":null,\\\"emailAccount\\\":\\\"japantraining-gmail-10029@mail.prod.i-shn.net\\\",\\\"domainNames\\\":null,\\\"masterKeyAliasName\\\":\\\"alias/usprod_dlp_77342_2467\\\",\\\"quarantineEnabled\\\":null,\\\"quarantineMailbox\\\":null,\\\"relayServerHost\\\":null,\\\"relayServerPort\\\":null,\\\"passiveDlpEnabled\\\":true,\\\"inlineDlpEnabled\\\":false,\\\"odsEnabled\\\":false,\\\"responseActionsEnabled\\\":false,\\\"inlineEmailServerDomain\\\":null,\\\"validDomainNames\\\":null,\\\"inValidDomainNames\\\":null,\\\"allowToEnterDomainNames\\\":null,\\\"ignoreRemovedDomains\\\":null,\\\"warningMessage\\\":null}\"}' WHERE (`CSP_id` = '2467') and (`Tenant_Id` = '77342') and (`Instance_Id` = '10029');
+
+
+
+79610
+gmail.com
+only gmail, internal
+34460
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"mcafee-gmail-34460@mail.prod.i-shn.net\",\"domainNames\":[\"gmail.com\"],\"masterKeyAliasName\":\"alias/usprod_dlp_79610_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":null,\"relayServerPort\":null,\"passiveDlpEnabled\":false,\"inlineDlpEnabled\":true,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null,\"validDomainNames\":null,\"inValidDomainNames\":null,\"allowToEnterDomainNames\":null,\"ignoreRemovedDomains\":null,\"warningMessage\":null}"}
+
+
+UPDATE `shn`.`DlpServiceConfiguration` SET `AdditionalDetails` = '{\"dlpEmailSettings\":\"{\\\"enabled\\\":null,\\\"emailAccount\\\":\\\"mcafee-gmail-34460@mail.prod.i-shn.net\\\",\\\"domainNames\\\":null,\\\"masterKeyAliasName\\\":\\\"alias/usprod_dlp_79610_2467\\\",\\\"quarantineEnabled\\\":null,\\\"quarantineMailbox\\\":null,\\\"relayServerHost\\\":null,\\\"relayServerPort\\\":null,\\\"passiveDlpEnabled\\\":false,\\\"inlineDlpEnabled\\\":true,\\\"odsEnabled\\\":false,\\\"responseActionsEnabled\\\":false,\\\"inlineEmailServerDomain\\\":null,\\\"validDomainNames\\\":null,\\\"inValidDomainNames\\\":null,\\\"allowToEnterDomainNames\\\":null,\\\"ignoreRemovedDomains\\\":null,\\\"warningMessage\\\":null}\"}' WHERE (`CSP_id` = '2467') and (`Tenant_Id` = '79610') and (`Instance_Id` = '34460');
+
+
+82294
+gmail.com
+only gmail. domain, internal
+26116
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"mcafee-gmail-26116@mail.prod.i-shn.net\",\"domainNames\":[\"gmail.com\"],\"masterKeyAliasName\":\"alias/usprod_dlp_82294_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":null,\"relayServerPort\":null,\"passiveDlpEnabled\":true,\"inlineDlpEnabled\":false,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null,\"validDomainNames\":null,\"inValidDomainNames\":null,\"allowToEnterDomainNames\":null,\"ignoreRemovedDomains\":null,\"warningMessage\":null}"}
+
+
+UPDATE `shn`.`DlpServiceConfiguration` SET `AdditionalDetails` = '{\"dlpEmailSettings\":\"{\\\"enabled\\\":null,\\\"emailAccount\\\":\\\"mcafee-gmail-26116@mail.prod.i-shn.net\\\",\\\"domainNames\\\":null,\\\"masterKeyAliasName\\\":\\\"alias/usprod_dlp_82294_2467\\\",\\\"quarantineEnabled\\\":null,\\\"quarantineMailbox\\\":null,\\\"relayServerHost\\\":null,\\\"relayServerPort\\\":null,\\\"passiveDlpEnabled\\\":true,\\\"inlineDlpEnabled\\\":false,\\\"odsEnabled\\\":false,\\\"responseActionsEnabled\\\":false,\\\"inlineEmailServerDomain\\\":null,\\\"validDomainNames\\\":null,\\\"inValidDomainNames\\\":null,\\\"allowToEnterDomainNames\\\":null,\\\"ignoreRemovedDomains\\\":null,\\\"warningMessage\\\":null}\"}' WHERE (`CSP_id` = '2467') and (`Tenant_Id` = '82294') and (`Instance_Id` = '26116');
+
+
+82672
+gmail.com
+only gmail. domain, internal
+20392
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"mcafeeoct18201825551-gmail-20392@mail.prod.i-shn.net\",\"domainNames\":[\"gmail.com\"],\"masterKeyAliasName\":\"alias/usprod_dlp_82672_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":null,\"relayServerPort\":null,\"passiveDlpEnabled\":true,\"inlineDlpEnabled\":false,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null}"}
+
+
+UPDATE `shn`.`DlpServiceConfiguration` SET `AdditionalDetails` = '{\"dlpEmailSettings\":\"{\\\"enabled\\\":null,\\\"emailAccount\\\":\\\"mcafeeoct18201825551-gmail-20392@mail.prod.i-shn.net\\\",\\\"domainNames\\\":null,\\\"masterKeyAliasName\\\":\\\"alias/usprod_dlp_82672_2467\\\",\\\"quarantineEnabled\\\":null,\\\"quarantineMailbox\\\":null,\\\"relayServerHost\\\":null,\\\"relayServerPort\\\":null,\\\"passiveDlpEnabled\\\":true,\\\"inlineDlpEnabled\\\":false,\\\"odsEnabled\\\":false,\\\"responseActionsEnabled\\\":false,\\\"inlineEmailServerDomain\\\":null}\"}' WHERE (`CSP_id` = '2467') and (`Tenant_Id` = '82672') and (`Instance_Id` = '20392');
+
+
+84377
+gmail.com
+only gmail domain
+21487
+
+{"dlpEmailSettings":"{\"enabled\":null,\"emailAccount\":\"allanuceprod84377-gmail-21487@mail.prod.i-shn.net\",\"domainNames\":[\"gmail.com\"],\"masterKeyAliasName\":\"alias/usprod_dlp_84377_2467\",\"quarantineEnabled\":null,\"quarantineMailbox\":null,\"relayServerHost\":null,\"relayServerPort\":null,\"passiveDlpEnabled\":true,\"inlineDlpEnabled\":false,\"odsEnabled\":false,\"responseActionsEnabled\":false,\"inlineEmailServerDomain\":null}"}
+
+
+UPDATE `shn`.`DlpServiceConfiguration` SET `AdditionalDetails` = '{\"dlpEmailSettings\":\"{\\\"enabled\\\":null,\\\"emailAccount\\\":\\\"allanuceprod84377-gmail-21487@mail.prod.i-shn.net\\\",\\\"domainNames\\\":null,\\\"masterKeyAliasName\\\":\\\"alias/usprod_dlp_84377_2467\\\",\\\"quarantineEnabled\\\":null,\\\"quarantineMailbox\\\":null,\\\"relayServerHost\\\":null,\\\"relayServerPort\\\":null,\\\"passiveDlpEnabled\\\":true,\\\"inlineDlpEnabled\\\":false,\\\"odsEnabled\\\":false,\\\"responseActionsEnabled\\\":false,\\\"inlineEmailServerDomain\\\":null}\"}' WHERE (`CSP_id` = '2467') and (`Tenant_Id` = '84377') and (`Instance_Id` = '21487');

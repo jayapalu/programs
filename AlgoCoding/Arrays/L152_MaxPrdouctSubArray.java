@@ -2,7 +2,7 @@ public class L152_MaxPrdouctSubArray {
 
     public static void main(String[] args) {
 
-        int[] nums = {-5,0,-2,-3,-4};
+        int[] nums = {-5,1,0,2,3,-4,-2};
         int res = maxProduct(nums);
         System.out.println("res = "+res);
     }
@@ -24,7 +24,7 @@ public class L152_MaxPrdouctSubArray {
 
             System.out.println(" i = "+i + " num = "+ nums[i]);
             if(nums[i] == 0){
-                System.out.println(" nums[i] = 0 ");
+                System.out.println(" ### nums[i] = 0 ");
                 cp = 1;
                 startIndex = i+1;
             }else {
@@ -37,15 +37,14 @@ public class L152_MaxPrdouctSubArray {
                     // current product is -ve, so need to delete the first element in subarray and check the product
                     if (cp/nums[startIndex] > maxp) {
                         maxp = cp/nums[startIndex];
-                        System.out.println(" cp is -ve  updated = " + maxp);
+                        System.out.println(" ####  startIndex = "+ startIndex + " + value = "+nums[startIndex]);
+                        System.out.println(" cp is -ve  updated maxcp = " + maxp);
                     }
                 }
             }
             i++;
         }
-
         return maxp;
-
     }
 
 }

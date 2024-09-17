@@ -4,7 +4,7 @@ public class FirstMissingPositive_L41 {
 
     public static void main(String args[]) {
 
-        int[] nums= new int[] {2,1};
+        int[] nums= new int[] {-1,-2,5,6};
 
         int res = findFirstMissingPositive(nums);
         System.out.println("Missing positive number is "+res);

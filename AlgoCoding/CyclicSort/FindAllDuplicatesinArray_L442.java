@@ -17,9 +17,11 @@ public class FindAllDuplicatesinArray_L442 {
 
         int index = 0;
         while(index < nums.length) {
+            System.out.print("index =   "+ index + " ");
             int correct = nums[index] - 1;
             if (nums[index] != nums[correct]) {
                 //swap
+                System.out.println("     swapping " + nums[index]+" "+nums[correct]);
                 swap(nums, index, correct);
             } else {
                 index++;
