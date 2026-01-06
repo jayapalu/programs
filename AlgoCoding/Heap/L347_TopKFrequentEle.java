@@ -1,29 +1,30 @@
 import java.util.*;
 
-public class TopKFrequentEle {
+public class L347_TopKFrequentEle {
     public static void main(String[] args){
 
-        int[] nums = {1};
+        int[] nums = {2,2,2,5,5,7,8,9,10,11};
         Set<String> set = new HashSet<>();
-        topKfrequent(nums, 1);
+        topKfrequent(nums, 3);
 
     }
 
     static int[] topKfrequent(int[] nums, int k){
 
-        Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> frequencyMap = new HashMap<>();
         for (int i=0; i< nums.length; i++){
-            map.put(nums[i], map.getOrDefault(nums[i], 0)+1);
+            frequencyMap.put(nums[i], frequencyMap.getOrDefault(nums[i], 0)+1);
         }
 
-        Queue<Integer> heap = new PriorityQueue<Integer>( (n1,n2) -> (map.get(n1) - map.get(n2))) ;
+        Queue<Integer> heap = new PriorityQueue<Integer>( (n1,n2) -> (frequencyMap.get(n1) - frequencyMap.get(n2))) ;
 
-        for(int key : map.keySet()) {
+        for(int key : frequencyMap.keySet()) {
 
             heap.add(key);
 
             //max heap is created
             if(heap.size() > k) {
+                System.out.println("removing "+ heap.peek() + " with freq "+ frequencyMap.get(heap.peek()));
                 heap.poll();
             }
         }
